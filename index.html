@@ -33,61 +33,67 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
   </header>
-<section>
-  <div class="container my-4">
-    <div class="row">
-      <div class="col-6">
-        <h1 class="h4">Catalogo Libri</h1>
-      </div>
-      <div class="col-6 d-flex justify-content-end">
-      <button type="button" class="btn btn-primary">Aggiungi un libro</button>
+  <main>
+    <div>
+      <div class="container">
+        <div class="row">
+          <main class="col-lg-9">
+            <div class="d-flex justify-content-between my-4 align-items-end">
+              <h1>Catalogo Libri</h1>
+              <a class="btn btn-primary" href="#" role="button">Aggiungi un libro</a>
+            </div>
+            
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Titolo</th>
+                  <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
+                  <th scope="col">Stato</th>
+                  <th scope="col">Azioni</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">I pilastri della Terra</th>
+                  <td class="d-none d-md-table-cell">-</td>
+                  <td>
+                    <span class="badge text-bg-success">Disponibile</span>
+                  </td>
+                  <td>
+                    <a href="" class="btn btn-outline-secondary">Edit</a>
+                    <a href="" class="btn btn-outline-secondary">Erase</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+
+
+
+          </main>
+          <aside class="col-lg-3">
+            seconda colonna
+          </aside>
+        </div>
       </div>
     </div>
-</section>
-  
+  </main>
 
-<section class=" container my-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <h2 class="h6"><strong>Titolo</strong></h2>
-      </div>
-      <div class="col-2">
-        <h2 class="h6"><strong>Data prestito</strong></h2>
-      </div>
-      <div class="col-2">
-        <h2 class="h6"><strong>Stato</strong></h2>
-      </div>
-      <div class="col-2">
-        <h2 class="h6"><strong>Azioni</strong></h2>
-      </div>
-  </div>
-</section>
 
-<section class="container my-4 bg-light border-bottom">
-  <div class="container">
-    <div class="row p-1">
-      <div class="col-6">
-        <h3 class="h6">I Pilastri della Terra</h3>
-      </div>
-      <div class="col-2">
-        <h3 class="h6">-</h3>
-      </div>
-      <div class="col-2">
-        <span class="badge rounded-pill text-bg-success">Disponibile</span>
-      </div>
-      <div class="col-2">
-       <img src="/img/pen-solid.svg" alt="pen" style="width: 20px; border-width: 20px;border-radius: 10%;" class="border">
-       <img src="/img/trash-can-solid.svg" alt="pen" style="width: 20px; border-width: 20px;border-radius: 10%;" class="border">
-      </div>
-  </div>
-</section>
+
+
+
+
+
 
 </body>
 </html>
